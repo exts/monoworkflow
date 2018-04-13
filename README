@@ -1,9 +1,7 @@
 # Usage
 
-```
-  monoworkflow build [<runtime>] [-r | -d] [--f=<folder>] [-s]
-  monoworkflow build_all [-r | -d] [--f=<folder>] [-s]
-```
+    monoworkflow build [<runtime>] [-r | -d] [--f=<folder>] [-s]
+    monoworkflow build_all [-r | -d] [--f=<folder>] [-s]
 
 # Json File Explanation
 
