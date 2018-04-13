@@ -36,13 +36,11 @@ proc build_command(runtime: string, settings: SettingsTable): string =
 proc build_default(settings: SettingsTable) =
   let runtime = get(settings, "runtime")
   discard execShellCmd(build_command(runtime, settings))
-  # echo build_command(runtime, settings)
 
 proc build_all(settings: SettingsTable) =
   let runtimes = getSeq(settings, "runtimes")
   for runtime in runtimes:
     discard execShellCmd(build_command(runtime, settings))
-    # echo build_command(runtime, settings)
 
 proc build*(args: Table) =
 
