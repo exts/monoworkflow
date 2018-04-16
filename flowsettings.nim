@@ -58,6 +58,9 @@ proc load_settings(file: string, args: Table) =
 
     if data.hasKey("build_folder"):
       build_folder = data["build_folder"].getStr()
+
+    if $args["--f"] != "nil":
+      build_folder = $args["--f"]
     
     if data.hasKey("self_contained"):
       self_contained = data["self_contained"].getBool()
