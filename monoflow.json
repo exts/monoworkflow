@@ -1,5 +1,6 @@
 {
     "dotnet": "dotnet",
+    "build_folder": "./bin",
     "self_contained": true,
     "build_all": [
         "win-x64",
